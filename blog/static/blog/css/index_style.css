@@ -5,12 +5,14 @@ body {margin:0 auto;overflow:hidden;}
 .header{
 	margin:0 auto;
 	width:100%;
-	height:640px;
+	/*height:640px;*/
+	height:100%;
 	background-color:#000;
-	position:relative;
+	position:absolute;
 	}
 .header canvas {
-	width:100%;height:auto/*默认全屏显示 可自己设置高度640px*/;
+	/*width:100%;height:auto;*/
+	width:100%;height:100%;
 	display:inline-block;vertical-align:baseline
 	position:absolute;
 	z-index:-1;
@@ -18,7 +20,8 @@ body {margin:0 auto;overflow:hidden;}
 .header .canvaszz{  /*用来解决视频右键菜单，用于视频上面的遮罩层*/
 	width:100%;
 	background-image: url(img/in_top_bj.jpg);
-	height:640px;
+	/*height:640px;*/
+	height:100%;
 	position:absolute;
 	z-index:10;
 		filter:alpha(opacity=40);
